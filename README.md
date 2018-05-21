@@ -971,12 +971,13 @@ It is also a good practice to annotate overridden methods with `@Override` to ma
 #### Views and ViewGroups
 
 * What is `View` in Android?
-
+a block of UI
 * Difference between `View.GONE` and `View.INVISIBLE`?
 
 * Can you create custom views? How?
 
 * What are ViewGroups and how they are different from the Views?
+ViewGroups are invisible container contains views and viewgroups
 
 * What is a canvas?
 
@@ -999,10 +1000,14 @@ It is also a good practice to annotate overridden methods with `@Override` to ma
 #### Dialogs nas Toasts
 
 * What is `Dialog` in Android?
+https://developer.android.com/guide/topics/ui/dialogs
 
 * What is `Toast` in Android?
+A toast provides simple feedback about an operation in a small popup. It only fills the amount of space required for the message and the current activity remains visible and interactive. Toasts automatically disappear after a timeout.
 
 * What the difference between `Dialog` and `Dialog Fragment`?
+
+both of them are abstract class provides custom behaviors for dialog. We can usually use `AlertDialog` in a subclass of `DialogFramgnet` to provide a good experience. If we need more custom, we can do swap `AlertDialog` with our own logic.  
 
 #### Intents and Broadcasting
 
